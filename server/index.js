@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const io = new Server();
 const app = express();
 
-app.use(bodyParser);
+app.use(bodyParser.json());
 
 io.on('connection', (socket) => {});
 
